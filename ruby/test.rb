@@ -1,4 +1,4 @@
-require './math'
+require File.expand_path('../math.rb', __FILE__)
 require 'test/unit'
 
 class MathTest < Test::Unit::TestCase
