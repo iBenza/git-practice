@@ -12,3 +12,5 @@ def absolute(x):
 
     else:
         return x
+
+def area(:)
