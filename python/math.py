@@ -9,3 +9,6 @@ def absolute(x):
         return -x
     else:
         return x
+
+def area_of_rectangle(width,height):
+    return width*height
