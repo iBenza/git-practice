@@ -11,4 +11,10 @@ class MathTest < Test::Unit::TestCase
     assert_equal(power(2, 3), 8)
     assert_equal(power(5, 0), 1)
   end
+
+  def test_absolute
+    assert_equal(absolute(3), 3);
+    assert_equal(absolute(-3), 3);
+    assert_equal(absolute(0), 0);
+  end
 end
