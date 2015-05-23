@@ -3,3 +3,12 @@ def negative(x):
 
 def power(x, y):
     return x ** y
+
+def absolute(x):
+    if x < 0:
+        return -x
+    else:
+        return x
+
+def area_of_rectangle(width,height):
+    return width*height
