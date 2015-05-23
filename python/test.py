@@ -13,7 +13,7 @@ class MathTest(unittest.TestCase):
     def test_absolute(self):
         self.assertEqual(math.absolute(0), 0)
         self.assertEqual(math.absolute(10), 10)
-        self.assertEqual(math.absolute(-10), -10)
+        self.assertEqual(math.absolute(-10), 10)
 
     def test_is_even(self):
         self.assertEqual(math.is_even(0), True)
@@ -29,5 +29,9 @@ class MathTest(unittest.TestCase):
         self.assertEqual(math.is_odd(-10), False)
         self.assertEqual(math.is_odd(10), False)
 
+    def test_rectangle(self):
+        self.assertEqual(math.rectangle(-5, 10), -50)
+        self.assertEqual(math.rectangle(10, 10), 100)
+    
 if __name__ == "__main__":
     unittest.main()
