@@ -17,4 +17,10 @@ class MathTest < Test::Unit::TestCase
     assert_equal(absolute(-3), 3);
     assert_equal(absolute(0), 0);
   end
+
+  def test_area_of_rectangle
+    assert_equal(area_of_rectangle(2, 3), 6);
+    assert_equal(area_of_rectangle(2, 0), 0);
+    assert_equal(area_of_rectangle(0, 3), 0);
+  end
 end
